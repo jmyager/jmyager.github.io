@@ -12,7 +12,7 @@ body {
     background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     /* Added for print */
-    /* margin: 0 0; */
+    margin: 5% 204px;
 }
 
 h1 {
@@ -61,11 +61,12 @@ a {
     color: rgba(0, 0, 0, 0.4)
 }
 
+
 /* Document Styles */
 
 .doc {
-    margin: .8in auto;
-    box-shadow: -5px 5px 1px rgba(0, 0, 0, 0.3);
+    /* margin: .8in auto; */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.18);
     width: 8.5in;
     height: 11in;
     background-color: white;
@@ -81,8 +82,8 @@ a {
 
 .contact-bar {
     width: 8.5in;
-    height: .8in;
-    margin-top: 2.5in;
+    height: .65in;
+    margin-top: 2.4in;
     background-color: rgb(238, 238, 232);
     position: absolute;
     display: flex;
@@ -93,7 +94,7 @@ a {
 
 .profile-wrapper {
     margin-left: 0.55in;
-    margin-top: 0.3in;
+    margin-top: 0.25in;
     width: 1.9in;
     height: 1.9in;
     border-radius: 50%;
@@ -110,20 +111,20 @@ a {
 }
 
 .name {
-    margin-top: .8in;
-    margin-left: 3.5in;
+    margin-top: .7in;
+    margin-left: 3.4in;
     position: absolute;
 }
 
 .title {
-    margin-left: .5in;
+    margin-left: .4in;
 }
 
 .title-bar {
     width: 5in;
     height: .5in;
-    margin-top: 1.25in;
-    margin-left: 3.5in;
+    margin-top: 1.15in;
+    margin-left: 3.4in;
     background-color: rgb(238, 238, 232);
     position: absolute;
 }
@@ -135,13 +136,12 @@ a {
     height: 2.5in;
     margin-left: 0;
     position: absolute;
-    color: rgb(238, 238, 232);
-    color: rgb(238, 238, 232, 0.8);
+    color: rgb(238, 238, 232, 1);
     padding: 0 .2in;
 }
 
 .about-me {
-    margin-top: 3.5in;
+    margin-top: 3.25in;
 }
 
 .technical-skills {
@@ -177,19 +177,25 @@ a {
 
 .main-wrapper {
     border-left: 1px solid black;
-    margin-top: -7.5in;
-    margin-left: 3.5in;
-    width: 4.8in;
-    height: 7in;
+    margin-top: -7.75in;
+    margin-left: 3.35in;
+    width: 5.05in;
+    height: 7.5in;
     position: absolute;
 }
 
 .projects, .education, .experience {
-    width: 4.1in;
-    height: 1.5in;
-    margin-left: .5in;
+    width: 4.75in;
+    height: auto;
+    margin-left: .3in;
+    margin-bottom: .4in;
     padding: 0;
 }
+
+.experience {
+    padding-right: .25in;
+}
+
 
 .main-wrapper h4 {
     color: rgba(0, 0, 0, 0.6)
@@ -207,11 +213,12 @@ a {
 }
 
 .line span {
-    margin-top: .03in;
+    margin-top: .0245in;
+    margin-left: .1in;
 }
 
 .line h4, .line p {
-    margin-left: .35in;
+    margin-left: .05in;
 }
 
 .line h4 {
