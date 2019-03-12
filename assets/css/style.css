@@ -1,5 +1,7 @@
-
+/* General Styles */
+/* =========== */
 body {
+  background-color: rgb(244,244,244);
   margin: 0;
   padding: 0;
   height: 100%;
@@ -7,120 +9,38 @@ body {
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
   position: relative;
-}
-
-img {
-    object-fit: cover;
-}
-
-.logo {
-  height: 80px;
-}
-
-.headerText {
-  margin-top: 5%;
-  padding-bottom: 2%;
-}
-
-.bodyText {
-  font-size: 1.10rem;
+  box-sizing: border-box;
 }
 
 ::-webkit-scrollbar { 
   display: none; 
 }
 
-.nav-icon {
-  margin-right: 4%;
-  margin-left: -3%;
-  padding-top: 2%;
+h1, h2, h3, h4, h5, h6, p{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+  }
+
+h1 {
+    font-size: 4rem;
+  }
+
+h2 {
+  font-size: 3rem;
 }
 
-.nav-icon:hover {
-  color: #0066ff;
+h5 {
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
-.roundButton {
-  color: #0066ff;
-  border-color: #0066ff;
-  border: 2px solid #0066ff;
-  border-radius: 25px;
+h6 {
+  font-size: 1.2rem;
 }
 
-.section {
-  height: 100vh;
+p {
+  font-size: 1.10rem;
 }
-
-#home {
-  background-color: white;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Lato', sans-serif;
-  font-size: 4rem;
-}
-
-.profilePic {
-  margin-top: 5%;
-  margin-bottom: 5%;
-  width: 200px;
-  height: auto;
-  border-radius: 50%;
-}
-
-
-#about, #testimonials, #clientWork{
-  background-color: #0066ff;
-  color: white;
-  padding: 5% 20% 18% 20%;
-}
-
-.btn-resume {
-  color: white;
-  border-color: white;
-}
-
-.btn-resume:hover {
-  background-color: white;
-  color: #0066ff;
-  border-color: white;
-}
-
-.skillCards {
-  margin-top: -10%;
-}
-
-.card {
-  padding-top: 5%;
-  padding-bottom: 8%;
-  border-radius: 5%;
-  box-shadow: 1px 1px .5px lightgrey;
-}
-
-.card-img-top {
-  color: #0066ff;
-}
-
-.card-body {
-  margin-top: 5%;
-}
-
-.card-title {
-  font-weight: bold;
-  padding-bottom: 5%;
-}
-
-.skillCardSub {
-  color: #0066ff;
-  /* padding-top: 10%; */
-}
-
-.skill-card-para {
-  height: 150px;
-  padding-bottom: 25px;
-}
-
 
 a {
   color: inherit;
@@ -130,15 +50,406 @@ a {
 a:hover {
   color: inherit;
   text-decoration: none;
+}  
+
+.btn-outline {
+  color: #26619C;
+  border-color: #26619C;
+  background-color: inherit;
 }
 
-.headerDiv {
+.btn-outline:hover {
+  color: white;
+  background-color: #26619C;
+  border-color: #5180af;
+}
+
+
+.btn-white {
+  border-color: white;
+  color: white;
+}
+
+.btn-white:hover {
+  background-color: rgb(38,97,156);
+}
+
+
+
+/* Navbar Styles */
+/* =========== */
+nav {
+  background-color: rgba(255,255,255,0)!important;
+  height: 100px;
+  margin-bottom: -100px;
+  color: white;
+  z-index: 10;
+}
+
+.logo {
+  height: 80px;
+}
+
+.nav-icon {
+  margin-right: 4%;
+  margin-left: -3%;
+  padding-top: 2%;
+}
+
+.nav-icon:hover {
+  color: rgb(38,97,156);
+}
+
+
+
+/* Hero Styles */
+/* =========== */
+#hero {
+  background: url("../images/hero.JPG") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position-x: 65%;
+  background-attachment: scroll;
+  width: 100%;
+  height: 100vh;
+  color: white;
+}
+
+.hero-content {
+  text-shadow: 0 1px 2px rgba(0,0,0,0.38);
+  width: 100%;
+  height: auto;
+  text-align: left;
+  z-index: 10;
+}
+
+.hero-content h2 {
+  width: 80%;
+}
+
+.overlay {
+  background: -webkit-linear-gradient(to right, rgba(38,97,156,.8), rgba(38,97,156,0.3), rgba(38,97,156,0));
+  background: linear-gradient(to right, rgba(38,97,156,.8), rgba(38,97,156,0.3), rgba(38,97,156,0));
+  background: linear-gradient(to right,  rgba(38,97,156,.8), rgba(38,97,156,0.3), rgba(38,97,156,0));
+  width: 100vw;
+  height: 100%;
+  margin: 0px 0px!important;
+  padding-top: 100px;
+  padding-left: 5%;
+  overflow: auto;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.arrow-wrapper {
   position: absolute;
-  left: 5%;
-  top: 25%;
-  height: 300px;
+  bottom: 1%;
+  width: 100%;
+  margin-left: -5%;
+  text-align: center;
 }
 
+
+
+/* About Styles */
+/* =========== */
+#about {
+  width: 100%;
+  height: auto;
+  background-color:white;
+  text-align: center;
+  padding: 96px 5% 96px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-left, .about-right {
+  flex: 0 1 200px;
+  margin: 0px auto 32px;
+}
+
+.about-right {
+  flex: 0 3 600px;
+}
+
+
+.about-right h2 {
+  font-weight: 600;
+  margin-bottom: 32px;
+  color: hsl(0,0%,13%);
+}
+
+.about-right h6 {
+  color: hsl(210, 61%, 55%);
+  margin-bottom: 32px;
+}
+
+.about-right p {
+  color: hsl(0,0%, 29%);
+  margin-bottom: 48px;
+}
+
+
+
+/* Skills Styles */
+/* =========== */
+#skills {
+  background-color: rgb(38,97,156);
+  background: -webkit-linear-gradient(to bottom right, rgba(38,97,156,1), rgba(0,51,127,1));
+  background: linear-gradient(to bottom right, rgba(38,97,156,1), rgba(0,51,127,1));
+  padding: 64px 1%;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#skills div {
+  background-color: white;
+  /* width: 100%; */
+  height: auto;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.skill-tile {
+  flex: 0 1 100%;
+  margin: 1%;
+  height: auto;
+  padding: 24px;
+}
+
+.skill-header, .skill-body {
+  height: 20%;
+  padding: 32px;
+  margin-bottom: 1%;
+  box-shadow: 0px 4px 6px rgba(0,0,0,0.18);
+}
+
+.skill-header {
+  color: rgb(0,51,127);
+}
+
+.skill-body {
+  height: 78%;
+  padding-top: 64px;
+}
+
+.skill-body h5, .skill-body h6, .skill-body p {
+  margin-bottom: 32px;
+}
+
+.skill-body h6 {
+  color: hsl(210, 61%, 55%);
+  margin-bottom: 8px;
+}
+
+.skill-body p {
+  margin-bottom: 72px;
+}
+
+
+
+/* Projects Styles */
+/* =========== */
+#projects {
+  background-color: white;
+  background-color: hsl(210, 20%, 95%);
+  width: 100%;
+  min-height: 1000px;
+  height: auto;
+  padding: 96px 0px 160px;
+  text-align: center;
+  position: relative;
+}
+
+.filter-box {
+  width: 95%;
+  height: auto;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  background-color: white;
+  border-radius: 3px;
+  margin: 0px auto 32px;
+  text-align: center;
+  padding: 32px 16px;
+  color: white;
+}
+
+.filter-box h2 {
+  margin-bottom: 32px;
+  color: #26619C;
+}
+
+.filter-box h6 {
+  color: hsl(210, 61%, 55%);
+  margin-bottom: 16px;
+}
+
+.filter-box h6 span {
+  color: #26619C;
+}
+
+.filter-box ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: auto;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.filter-box button {
+  flex: 0 1 auto;
+  height: auto;
+  margin: 2px;
+  padding: 1px 0.25px;
+  background-color: white;
+  color: black;
+  border-radius: 3px;
+  list-style-type: none;
+  border: none;
+  box-shadow: none;
+}
+
+.filter-box button:hover, .filter-box button:hover li {
+  background: -webkit-linear-gradient(to right, rgb(81,128,175), rgba(0,51,127,1));
+  background: linear-gradient(to right, rgb(81,128,175), rgba(0,51,127,1));
+  color: white;
+  cursor: pointer;
+}
+
+.filter-box li {
+  color: black;
+  width: 120px;
+}
+
+.filter-active{
+  background: -webkit-linear-gradient(to right, rgb(81,128,175), rgba(0,51,127,1));
+  background: linear-gradient(to right, rgb(81,128,175), rgba(0,51,127,1));
+}
+
+.filter-active li {
+  color: white;
+}
+
+.git-btn-wrapper {
+  position: absolute;
+  width: 100%;
+  bottom: 126px;
+  height: auto;
+}
+
+.project-anchor-left, .project-anchor-right {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  margin: 0;
+  padding-top: 25%;
+  background: rgba(11,29,46,0.5);
+  text-shadow: 0 1px 2px rgba(0,0,0,0.38);
+}
+
+.project-anchor-left:hover {
+  background: -webkit-linear-gradient(to right, rgba(11,29,46,0.5), rgba(189,207,225,0.5));
+  background: linear-gradient(to right, rgba(11,29,46,0.5), rgba(189,207,225,0.5));
+  background: linear-gradient(to right,  rgba(11,29,46,0.5), rgba(189,207,225,0.5));
+}
+
+.project-anchor-right:hover {
+    background: -webkit-linear-gradient(to left, rgba(11,29,46,0.5), rgba(189,207,225,0.5));
+    background: linear-gradient(to left, rgba(11,29,46,0.5), rgba(189,207,225,0.5));
+    background: linear-gradient(to left,  rgba(11,29,46,0.5), rgba(189,207,225,0.5));
+}
+
+.project-anchor-right {
+  left: 50%;
+}
+
+
+
+/* Footer Styles */
+/* =========== */
+footer {
+  background-color: #26619C;
+  height: 480px;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+.chat-tile {
+  position: relative;
+  top: -10%;
+  width: 90%;
+  background-color: rgb(19,48,78);
+  margin: 0px auto 64px;
+  height: auto;
+  z-index: 2;
+  border-radius: 10px;
+  padding: 32px;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.chat-tile h4, .chat-tile p, .chat-tile button {
+  flex: 0 1 100%;
+  margin: 0px auto 16px;
+}
+
+.chat-tile button {
+  margin-bottom: 0px;
+}
+
+.chat-tile button:hover {
+  background-color: white;
+  color: #26619C;
+}
+
+footer img {
+  display: block;
+  margin: -80px auto 16px;
+}
+
+.social-box {
+  width: 30%;
+  margin: 0px auto 16px;
+  text-align: center;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.social-box a {
+  flex: 0 1 auto;
+  height: 45px;
+  margin: 0px 5px;
+  padding: 10px 15px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.social-box a:hover {
+  background-color: white;
+  color: #26619C;
+}
+
+footer p {
+  display: block;
+  margin: 0px auto;
+  width: 50%;
+}
+
+
+
+/* Modal Styles */
+/* ==================== */
 
 .modal-transparent {
   background-color: rgb(0,0,0,0);
@@ -148,191 +459,16 @@ a:hover {
   margin: auto;
 }
 
-.btn-outline {
-  border: .5px solid #0066ff;
-  margin: 10px;
-}
 
-.btn-outline:hover {
-  color: white;
-  background-color: #0066ff;
-  border: white;
-}
-
-.portfolioBtn {
-  position: absolute;
-  left: 50%;
-  bottom: 5%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-#portfolio {
-  margin-top: 12%;
-  background-color: white;
-  position: relative;
-  height: 100%;
-  text-align: center;
-  padding-bottom: 10%;
-}
-
-#clientWork {
-  height: auto;
-  padding-bottom: 0;
-}
-
-.clientCard {
-  margin-bottom: -30%;
-  margin-top: 20%;
-  border-radius: 25px;
-  color: black;
-}
-
-.clientLogo {
-  width: 12rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media only screen and (max-width: 764px) {
-  .clientCard {
-      margin-top: 40%;
-      margin-bottom: -20%;
-  }
-  .clientPara {
-    margin-bottom: -20%
-  }
-}
-
-#testimonials {
-  background-color: white;
-  color: black;
-  border-top: 1px solid lightgray;
-  height: 55rem;
-  padding-top: 20%;
-  margin-bottom: 8rem;
-}
-
-.testimonialPhoto {
-  border: 2px solid #0066ff;
-}
-
-#footer {
-  background-color: #0066ff;
-  height: 42rem;
-}
-
-.projectBar {
-  position: relative;
-  top: -10%;
-  width: auto;
-  margin-left: 1.75rem;
-  margin-right: 1.75rem;
-  margin-top: 2rem;
-  background-color: #293347;
-  border-radius: 15px;
-  padding: 3% 2%;
-  color: white;
-  height: auto;
-}
-
-.projectBar .btn-outline-primary {
-  color: white;
-}
-
-.projectBarItem {
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-}
-
-.footerBody {
-  margin-left: auto;
-  margin-right: auto;
-  color: #b3d1ff;
-}
-
-.footerItem {
-  margin-bottom: 2.5rem;
-}
-
-.circleIcon {
-  border-radius: 50%;
-  border: .12rem solid #b3d1ff;
-  color: white;
-  font-size: 1.5rem;
-  display: inline-block;
-  width: 48px;
-  margin: 0rem .25rem;
-}
-
-.circleIcon:hover {
-  color: #0066ff;
-  background-color:white;
-  border-color: white;
-}
-
-.handcrafted {
-  margin-top: 2.5rem;
-  color: #b3d1ff;
-  margin-bottom: .5rem;
-}
-
-
-
-    /* ============================================= */
-
-
-    /* Button Animation */
-
-    /* Float Shadow */
-.hvr-float-shadow {
-  vertical-align: middle;
-  left: 45%;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-}
-.hvr-float-shadow:before {
-  pointer-events: none;
-  position: absolute;
-  z-index: -1;
-  content: '';
-  top: 100%;
-  left: 5%;
-  height: 10px;
-  width: 90%;
-  opacity: 0;
-  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
-  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
-  /* W3C */
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform, opacity;
-  transition-property: transform, opacity;
-}
-.hvr-float-shadow:hover, .hvr-float-shadow:focus, .hvr-float-shadow:active {
-  -webkit-transform: translateY(-5px);
-  transform: translateY(-5px);
-  /* move the element up by 5px */
-}
-.hvr-float-shadow:hover:before, .hvr-float-shadow:focus:before, .hvr-float-shadow:active:before {
-  opacity: 1;
-  -webkit-transform: translateY(5px);
-  transform: translateY(5px);
-  /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
-}
 
 /* Scroll To Top Button */
+/* ==================== */
 #scrollBtn {
   position: fixed; /* Fixed/sticky position */
   bottom: 20px; /* Place the button at the bottom of the page */
   right: 30px; /* Place the button 30px from the right */
-  z-index: 1; /* Make sure it does not overlap */
-  color: #0066ff; /* Set a background color */
+  z-index: 99; /* Make sure it does not overlap */
+  color: rgb(38,97,156); /* Set a background color */
   cursor: pointer; /* Add a mouse pointer on hover */
   background-color: white;
   border: .5px solid white;
@@ -341,15 +477,143 @@ a:hover {
 
 #scrollBtn:hover {
   color: white;
-  border-color: #0066ff;
-  background-color: #0066ff;
+  border-color: rgb(38,97,156);
+  background-color: rgb(38,97,156);
   transition: color .25s ease-in
 }
 
-.blur {
-  box-shadow: 0px 0px 20px 20px rgba(255,255,255,1);
-  text-shadow: 0px 0px 10px rgba(51, 51, 51, 0.9);
-  transform: scale(0.9);
-  opacity: 0.6;
-  transition: .25s;
+
+
+/* Responsive Styles /*
+/* ================= /*
+
+/* Extra Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 320px) {
+  .overlay {
+    padding-left: 2%;
+  }
+
+  .hero-content {
+    width: 98%;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 480px) {
+  .overlay {
+    padding-left: 10%;
+  }
+
+  .hero-content {
+    width: 70%;
+  }
+
+  .arrow-wrapper {
+    margin-left: -10%;
+    width: 100%;
+  }
+  
+
+  .skill-tile {
+    padding: 32px;
+  }
+
+  .filter-box {
+    width: 90%;
+  }
+  
+  .chat-tile button {
+    flex: 0 1 50%;
+  }
+
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 576px) {
+  .hero-content {
+    width: 65%;
+  }
+
+  .hero-content h2 {
+    width: 100%;
+  }
+
+  .skill-tile {
+    padding: 48px;
+  }
+
+  .filter-box {
+    width: 80%;
+  }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+  #skills {
+    padding: 64px 16px;
+  }
+  
+  .skill-tile {
+    flex: 0 1 48%;
+    padding: 24px;
+  }
+
+  .filter-box {
+    width: 60%;
+  }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #hero {
+    height: 100vh;
+    background-attachment: fixed;
+    overflow: hidden;
+    /* Create the parallax scrolling effect */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .overlay {
+    padding-top: 150px;
+    height: 100vh;
+  }
+  
+  #skills {
+    padding: 64px;
+  }
+
+  .filter-box {
+    padding: 32px;
+  }
+
+  footer {
+    height: 400px;
+  }
+
+  .chat-tile {
+    align-items: baseline;
+  }
+
+  .chat-tile h4, .chat-tile p, .chat-tile button {
+    flex: 0 1 30%;
+    margin-bottom: 0px;
+  }
+
+  .chat-tile button {
+    flex: 0 1 10%;
+    margin: 0px 10%;
+  }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1500px) {...} */
+
+/* Microsoft and Edge Browser */
+@supports (-ms-ime-align:auto) {
+  #hero {
+      background-attachment: scroll;
+  }
 }
