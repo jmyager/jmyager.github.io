@@ -105,7 +105,7 @@ nav {
 /* Hero Styles */
 /* =========== */
 #hero {
-  background: url("../images/hero.JPG") no-repeat center center;
+  background: url("../images/hero.JPG") no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -114,6 +114,7 @@ nav {
   background-attachment: scroll;
   width: 100%;
   height: 700px;
+  max-height: 100vh;
   color: white;
 }
 
@@ -495,6 +496,10 @@ footer p {
 
   .hero-content {
     width: 98%;
+  }
+
+  .arrow-wrapper {
+    margin-left: -2%;
   }
 }
 
