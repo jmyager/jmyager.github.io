@@ -218,7 +218,7 @@ $(document).ready(function () {
 
     // Filter button functions //
     // ======================= //
-    $("ul").on("click", "li", function () {
+    $("#filterList").on("click", "li", function () {
         // array to hold newly filtered projects
         let filteredProjects = [];
         // remove active class from focused button
