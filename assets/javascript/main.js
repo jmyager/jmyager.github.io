@@ -87,7 +87,7 @@ $(document).ready(function () {
             name: 'BassSavvy',
             tags: ['Freelance', 'Node.js', 'Express', 'JavaScript', 'APIs', 'Fullstack',],
             filters: ['JavaScript', 'jQuery', 'Node.js', 'Freelance', 'Frontend', 'Backend', 'Fullstack', 'API', 'Express'],
-            imgSrc: 'assets/images/basssavvy.png',
+            imgSrc: 'assets/images/basssavvy_edited.jpg',
             imgAlt: 'BassSavvy project thumbnail',
             demoUrl: 'http://www.basssavvy.com/',
             gitUrl: 'https://github.com/jmyager/Levels'
@@ -132,7 +132,7 @@ $(document).ready(function () {
             name: 'Memory Game',
             tags: ['React', 'JavaScript', 'HTML', 'CSS'],
             filters: ['React', 'JavaScript'],
-            imgSrc: 'assets/images/memory-game.png',
+            imgSrc: 'assets/images/memory-game_edited.jpg',
             imgAlt: 'memory game project thumbnail',
             demoUrl: 'https://fathomless-mountain-34042.herokuapp.com/',
             gitUrl: 'https://github.com/jmyager/MemoryGame'
@@ -141,7 +141,7 @@ $(document).ready(function () {
             name: 'Train Schedule',
             tags: ['Firebase', 'jQuery', 'Bootstrap', 'JavaScript'],
             filters: ['Firebase', 'jQuery', 'Bootstrap', 'JavaScript'],
-            imgSrc: 'assets/images/train-schedule.png',
+            imgSrc: 'assets/images/train-schedule_edited.jpg',
             imgAlt: 'train schedule project thumbnail',
             demoUrl: 'http://www.joshyager.com/Train-Schedule/',
             gitUrl: 'https://github.com/jmyager/Train-Schedule'
@@ -150,7 +150,7 @@ $(document).ready(function () {
             name: 'Trivia Game',
             tags: ['JavaScript', 'JS Timers', 'JS Functions', 'Bootstrap', 'HTML', 'CSS'],
             filters: ['JavaScript', 'Bootstrap'],
-            imgSrc: 'assets/images/trivia-game.png',
+            imgSrc: 'assets/images/trivia-game_edited.jpg',
             imgAlt: 'trivia game project thumbnail',
             demoUrl: 'http://www.joshyager.com/TriviaGame/',
             gitUrl: 'https://github.com/jmyager/TriviaGame'
@@ -159,7 +159,7 @@ $(document).ready(function () {
             name: 'Bamazon',
             tags: ['Node.js', 'MySql', 'JavaScript'],
             filters: ['Node.js', 'MySql', 'JavaScript'],
-            imgSrc: 'assets/images/bamazon.png',
+            imgSrc: 'assets/images/bamazon_edited.jpg',
             imgAlt: 'bamazon app project thumbnail',
             demoUrl: 'https://raw.githubusercontent.com/jmyager/Bamazon_app/master/images/bamazonCustomer.gif',
             gitUrl: 'https://github.com/jmyager/Bamazon_app'
