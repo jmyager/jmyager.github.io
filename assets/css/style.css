@@ -114,7 +114,6 @@ nav {
   background-attachment: scroll;
   width: 100%;
   height: 700px;
-  max-height: 100vh;
   color: white;
 }
 
@@ -488,8 +487,12 @@ footer p {
 /* Responsive Styles /*
 /* ================= /*
 
-/* Extra Extra small devices (phones, 600px and down) */
+/* Extra Extra small devices (up to 320px) */
 @media only screen and (max-width: 320px) {
+  #hero {
+    height: 500px;
+  }
+
   .overlay {
     padding-left: 2%;
   }
