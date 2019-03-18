@@ -72,6 +72,7 @@ a:hover {
 
 .btn-white:hover {
   background-color: rgb(38,97,156);
+  border-color: rgb(38,97,156);
 }
 
 
@@ -82,6 +83,7 @@ nav {
   background-color: rgba(255,255,255,0)!important;
   height: 100px;
   margin-bottom: -100px;
+  margin-right: 20px;
   color: white;
   z-index: 10;
 }
@@ -301,7 +303,7 @@ nav {
   padding: 0px;
 }
 
-.filter-box button {
+.filter-box li {
   flex: 0 1 auto;
   height: auto;
   margin: 2px;
@@ -314,7 +316,7 @@ nav {
   box-shadow: none;
 }
 
-.filter-box button:hover, .filter-box button:hover li {
+.filter-box ul li:hover {
   background: -webkit-linear-gradient(to right, rgb(81,128,175), rgba(0,51,127,1));
   background: linear-gradient(to right, rgb(81,128,175), rgba(0,51,127,1));
   color: white;
@@ -329,10 +331,7 @@ nav {
 .filter-active{
   background: -webkit-linear-gradient(to right, rgb(81,128,175), rgba(0,51,127,1));
   background: linear-gradient(to right, rgb(81,128,175), rgba(0,51,127,1));
-}
-
-.filter-active li {
-  color: white;
+  color: white!important;
 }
 
 .git-btn-wrapper {

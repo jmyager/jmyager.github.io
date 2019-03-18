@@ -123,7 +123,7 @@ $(document).ready(function () {
             name: 'Imprompto',
             tags: ['JavaScript', 'jQuery', 'APIs', 'HTML', 'CSS'],
             filters: ['JavaScript', 'jQuery', 'API', 'Frontend'],
-            imgSrc: 'assets/images/imprompto.png',
+            imgSrc: 'assets/images/imprompto_edited.jpg',
             imgAlt: 'imprompto app project thumbnail',
             demoUrl: 'https://shreedamin.github.io/imprompto/',
             gitUrl: 'https://github.com/jmyager/ImprompTo'
@@ -218,13 +218,13 @@ $(document).ready(function () {
 
     // Filter button functions //
     // ======================= //
-    $("ul").on("click", "button", function () {
+    $("ul").on("click", "li", function () {
         // array to hold newly filtered projects
         let filteredProjects = [];
         // remove active class from focused button
-        $('ul').find('button.filter-active').removeClass()
+        $('ul').find('li.filter-active').removeClass()
         // pull filter data value of the li inside the button
-        var filter = $(this).children('li').data('filter');
+        var filter = $(this).data('filter');
         // add active class to parent button (li was clicked)
         $(this).addClass('filter-active');
         // display filter in text "Show me 'All' Projects"
