@@ -96,7 +96,7 @@ $(document).ready(function () {
             name: 'MySuperTrainer',
             tags: ['Freelance', 'Frontend', 'Bootstrap', 'JavaScript', 'HTML', 'CSS'],
             filters: ['Freelance', 'Frontend', 'Bootstrap', 'JavaScript', 'HTML', 'CSS'],
-            imgSrc: 'assets/images/mysupertrainer.png',
+            imgSrc: 'assets/images/mysupertrainer_edited.jpg',
             imgAlt: 'MySuperTrainer project thumbnail',
             demoUrl: 'http://www.mysupertrainer.com/',
             gitUrl: 'https://github.com/jmyager/mySuperTrainer'
@@ -105,7 +105,7 @@ $(document).ready(function () {
             name: 'Popin',
             tags: ['React', 'Express', 'MongoDB', 'APIs', 'React-Router'],
             filters: ['React', 'Express', 'MongoDB', 'API', 'Fullstack', 'Backend'],
-            imgSrc: 'assets/images/popin.png',
+            imgSrc: 'assets/images/popin_edited.jpg',
             imgAlt: 'poppin app project thumbnail',
             demoUrl: 'https://frozen-bastion-62666.herokuapp.com/',
             gitUrl: 'https://github.com/jmyager/Popin'
@@ -114,7 +114,7 @@ $(document).ready(function () {
             name: "Buzz'd",
             tags: ['JavaScript', 'jQuery', 'Hammerjs', 'Materialize', 'MySql', 'Express', 'Sequelize'],
             filters: ['JavaScript', 'jQuery', 'Frontend', 'MySql', 'Express'],
-            imgSrc: 'assets/images/buzzd.png',
+            imgSrc: 'assets/images/buzzd_edited.jpg',
             imgAlt: 'buzzd app project thumbnail',
             demoUrl: 'https://fathomless-depths-99227.herokuapp.com/',
             gitUrl: 'https://github.com/jmyager/Buzz-d'

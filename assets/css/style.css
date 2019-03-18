@@ -184,7 +184,7 @@ nav {
 }
 
 .about-right h6 {
-  color: hsl(210, 61%, 55%);
+  color: rgb(48, 118, 197);
   margin-bottom: 32px;
 }
 
@@ -244,7 +244,7 @@ nav {
 }
 
 .skill-body h6 {
-  color: hsl(210, 61%, 55%);
+  color: rgb(48, 118, 197);
   margin-bottom: 8px;
 }
 
@@ -285,12 +285,12 @@ nav {
 }
 
 .filter-box h6 {
-  color: hsl(210, 61%, 55%);
+  color: rgb(48, 118, 197);
   margin-bottom: 16px;
 }
 
 .filter-box h6 span {
-  color: #26619C;
+  color: rgba(0,51,127,1);
 }
 
 .filter-box ul{
