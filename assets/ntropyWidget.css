@@ -13,6 +13,7 @@
     z-index: 99999;
     cursor: pointer;
     height: fit-content;
+    max-height: 50px;
     padding: 20px 10px;
     display: flex;
     justify-content: center;
@@ -271,5 +272,13 @@
     .feedbackTrigger.circle.top {
         top: 30px;
         bottom: unset;
+    }
+}
+
+
+/* fix for iPhone Safari z-index */
+@media screen and (max-width: 768px) {
+    .feedbackTrigger {
+        -webkit-transform: translateZ(1px)
     }
 }
