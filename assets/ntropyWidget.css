@@ -289,6 +289,6 @@ and (min-device-width : 375px)
 and (max-device-width : 812px)
 and (-webkit-device-pixel-ratio : 3) {
     .feedbackTrigger {
-        padding: 6px 3px;
+        padding: 10px 5px;
     }
 }
