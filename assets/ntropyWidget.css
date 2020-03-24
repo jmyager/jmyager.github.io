@@ -1,0 +1,275 @@
+.feedbackTrigger {
+    font-family: inherit;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    background-color: rgba(170, 96, 243, 1);
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 16px!important;
+    letter-spacing: 1.25px;
+    z-index: 99999;
+    cursor: pointer;
+    height: fit-content;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedbackTrigger .feedbackTrigger_text {
+    font-size: inherit;
+    margin: 0;
+}
+
+.feedbackTrigger_text-circle, .feedbackTrigger_icon {
+    display: none;
+}
+
+.feedbackWidget {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 650px;
+    background-color: white;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    bottom: -700px;
+    left: 0;
+    transition: .25s ease;
+    z-index: 99999;
+}
+
+.widget_survey {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.feedbackWidget_accentBar {
+    display: none;
+}
+
+.feedbackWidget_closeBtn {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    color: rgba(0, 0, 0, .8);
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1), -2px -2px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .25s ease;
+    border: none;
+    padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .feedbackTrigger {
+        font-family: inherit;
+        position: fixed;
+        right: -5px;
+        bottom: unset;
+        left: unset;
+        width: fit-content;
+        min-height: 153px;
+        height: auto;
+        text-align: center;
+        background-color: rgba(170, 96, 243, 0.75);
+        box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.3);
+        color: white;
+        display: flex;
+        font-size: 18px!important;
+        padding: 10px 20px 10px 15px;
+        letter-spacing: 1.25px;
+        transition: transform .25s;
+    }
+    .feedbackTrigger:hover {
+        transform: translateX(-4px)
+    }
+    .feedbackTrigger.left:hover {
+        transform: translateX(4px)
+    }
+    .feedbackTrigger_text {
+        margin: 0px;
+        color: inherit;
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+    }
+    .feedbackTrigger_icon, .feedbackTrigger_text-circle {
+        display: none;
+    }
+    .feedbackWidget {
+        width: 350px;
+        height: 550px;
+        background-color: white;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+        position: fixed;
+        left: unset;
+        bottom: unset;
+        right: -400px;
+        top: calc(50% - 275px);
+        transition: .25s ease;
+    }
+    .feedbackWidget_accentBar {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 10px;
+        background-color: #ff4081;
+        background: linear-gradient(to right, #ff4081 0%, #60c3f3 80%);
+    }
+    .feedbackWidget_closeBtn {
+        position: absolute;
+        top: -7px;
+        left: -13px;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        background-color: white;
+        box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1), -2px -2px 20px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: .25s ease;
+        border: none;
+    }
+    .feedbackWidget_closeBtn:hover {
+        background-color: white;
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+        color: #ff4081;
+    }
+    .feedbackWidget_closeBtnIcon {
+        font-size: 14px;
+    }
+    .widget_survey {
+        margin-top: 10px;
+        width: 100%;
+        height: calc(100% - 10px);
+        border: none;
+    }
+    /* Config Styles */
+    /* ============= */
+    .feedbackTrigger.transparent {
+        background-color: rgba(242, 245, 248, 0.96);
+        color: rgba(0, 0, 0, .8);
+        box-shadow: none;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+    }
+    .feedbackTrigger.small {
+        font-size: 14px!important;
+        min-height: 100px;
+    }
+    .feedbackTrigger.circle.small {
+        padding-bottom: 0px;
+    }
+    .feedbackTrigger.top {
+        top: 5%;
+    }
+    .feedbackWidget.top, .feedbackWidget.circle.top {
+        top: 5%;
+    }
+    .feedbackTrigger.bottom {
+        top: unset;
+        bottom: 5%;
+    }
+    .feedbackWidget.bottom {
+        top: unset;
+        bottom: 5%;
+    }
+    .feedbackTrigger.left {
+        left: -5px;
+        justify-content: flex-end;
+        padding: 10px 15px 10px 20px;
+    }
+    .feedbackTrigger.left .feedbackTrigger_text {
+        writing-mode: vertical-lr;
+        transform: none;
+    }
+    .feedbackWidget.left, .feedbackWidget.circle.left, .feedbackWidget.left.bottom, .feedbackWidget.left.top {
+        left: -400px;
+    }
+    .feedbackWidget.left>.feedbackWidget_closeBtn {
+        position: absolute;
+        top: -7px;
+        left: 337px;
+    }
+    .feedbackTrigger.circle {
+        min-width: unset;
+        min-height: unset;
+        width: 60px;
+        height: 60px;
+        bottom: 30px;
+        right: 30px;
+        top: unset;
+        border-radius: 50%;
+        padding: 0px;
+        transform: rotate(0deg);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        font-size: 20px!important;
+        justify-content: center;
+        align-items: center;
+    }
+    .feedbackTrigger.circle.small {
+        width: 40px;
+        height: 40px;
+        font-size: 16px!important;
+        padding-left: 1px;
+    }
+    .feedbackTrigger.circle:hover {
+        transform: scale(1.1, 1.1);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    }
+    .feedbackTrigger.circle:hover .feedbackTrigger_text-circle {
+        opacity: 1;
+    }
+    .feedbackTrigger.circle>.feedbackTrigger_text {
+        display: none;
+    }
+    .feedbackTrigger.circle>.feedbackTrigger_icon {
+        display: block;
+        font-size: inherit;
+    }
+    .feedbackTrigger.circle>.feedbackTrigger_text-circle {
+        position: absolute;
+        left: -180px;
+        width: 120px;
+        height: 20px;
+        background-color: white;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        z-index: 99999;
+        opacity: 0;
+        color: rgba(0, 0, 0, 0.8);
+        font-size: 12px;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        border-radius: 8px;
+    }
+    .feedbackTrigger.circle.left {
+        right: 0px;
+        left: 30px;
+    }
+    .feedbackWidget.circle {
+        top: unset;
+        bottom: 5%;
+    }
+    .feedbackTrigger.circle.left>.feedbackTrigger_text-circle {
+        left: 80px;
+    }
+    .feedbackTrigger.circle.top {
+        top: 30px;
+        bottom: unset;
+    }
+}
